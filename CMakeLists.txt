@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( display_annotation )
+find_package( OpenCV REQUIRED )
+add_executable( display_annotation display_annotation.cpp )
+target_link_libraries( display_annotation ${OpenCV_LIBS} )
